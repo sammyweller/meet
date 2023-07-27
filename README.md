@@ -12,3 +12,7 @@ GIVEN the user hasn't opened event details; WHEN the user clicks on "show more d
 
 6. GIVEN the user has not selected a city; WHEN the user is browsing list of all cities; THEN the user should see a chart showing upcoming events in all cities. 
 
+
+### Serverless functions: 
+
+In this project, we will use servless functions to authorize the client-side app in order to retrieve event data. We will use the Google Calender API through a consumer key, a consumer secret, and an access token in order to send requested resources. By using serverless functions, we can ensure smooth and efficient handling of user requests while maintaining a secure backend infrastructure.
