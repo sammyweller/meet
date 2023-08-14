@@ -1,7 +1,7 @@
 ## Key Features and User Stories: 
 
 ### Filter events by city
-1. 
+1. GIVEN the user has opened the main page, WHEN user inputs a city, THEN a list of events in that city will be displayed. 
 
 ### Show/hide event details
 2. GIVEN the user has opened event details; WHEN the user clicks on "hide event details"; THEN the information about the event should close. 
