@@ -3,7 +3,7 @@
 ### Filter events by city
 * Scenario 1: GIVEN the hasn't searched for a city; WHEN the user opens the main page, THEN a list of upcoming events in all cities will be displayed. 
 * Scenario 2: GIVEN the user has opened the main page, WHEN user inputs a city, THEN a list of events in that city will be displayed. 
-* Scenario 3: GIVEN the user has opened the main page, WHEN app displays list of upcoming events in all cities, THEN user should be able to click on a city in the list. 
+* Scenario 3: GIVEN the user was typing a city in the textbox and the list of suggested cities is showing, WHEN user selects a city from the list, THEN the city should be changed to that city and user should receive list of events in that city. 
 
 ### Show/hide event details
 * Scenario 1: Given the user hasn't opened event details, WHEN a list of events in displayed, THEN the event details should be collapsed by default. 
