@@ -1,24 +1,27 @@
 ## Key Features and User Stories: 
 
 ### Filter events by city
-1. GIVEN the user has opened the main page, WHEN user inputs a city, THEN a list of events in that city will be displayed. 
+Scenario 1: GIVEN the hasn't searched for a city; WHEN the user opens the main page, THEN a list of upcoming events in all cities will be displayed. 
+Scenario 2: GIVEN the user has opened the main page, WHEN user inputs a city, THEN a list of events in that city will be displayed. 
+Scenario 3: GIVEN the user has opened the main page, WHEN app displays list of upcoming events in all cities, THEN user should be able to click on a city in the list. 
 
 ### Show/hide event details
-2. GIVEN the user has opened event details; WHEN the user clicks on "hide event details"; THEN the information about the event should close. 
--OR-
-GIVEN the user hasn't opened event details; WHEN the user clicks on "show more details; THEN the information about the event should open. 
+Scenario 1: Given the user hasn't opened event details, WHEN a list of events in displayed, THEN the event details should be collapsed by default. 
+Scenatio 2: GIVEN the user hasn't opened event details; WHEN the user clicks on "show more details", THEN the information about the event should open. 
+Scenario 3: GIVEN the user has opened event details; WHEN the user clicks on "hide event details"; THEN the information about the event should close. 
 
 ### Specify number of events
-3. GIVEN the user is on the events listing page of the app; WHEN the user clicks on "filter"; THEN the user should have the ability to limit the amount of events listed. 
+Scenario 1: GIVEN the user hasn't manually filtered number of events, WHEN a list of events is displayed, THEN 32 events should be displayed by default. 
+Scenario 2: GIVEN the user is on the events listing page of the app; WHEN the user clicks on "filter"; THEN the user should have the ability to limit the amount of events listed by their desired number. 
 
 ### Use the app when offline
-4. GIVEN the user no longer has internet access; WHEN the user opens the app; THEN the user should still be able to see the events viewed when last online. 
+GIVEN the user no longer has internet access; WHEN the user opens the app; THEN the user should still be able to see the events viewed when last online. 
 
 ### Add an app shortcut to home screen
-5. GIVEN the user has downloaded the app; WHEN the user goes to their home screen; THEN the user should be able to click on app shortcut to open app faster. 
+GIVEN the user has downloaded the app; WHEN the user goes to their home screen; THEN the user should be able to click on app shortcut to open app faster. 
 
 ### Display charts visualizing event details
-6. GIVEN the user has not selected a city; WHEN the user is browsing list of all cities; THEN the user should see a chart showing upcoming events in all cities. 
+GIVEN the user has not selected a city; WHEN the user is browsing list of all cities; THEN the user should see a chart showing upcoming events in all cities. 
 
 
 ### Serverless functions: 
