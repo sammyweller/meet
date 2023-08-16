@@ -1,11 +1,101 @@
+body {
+  background-color: #F5F5F5;
+}
+
 .App {
   text-align: center;
+  padding: 30px 30px;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+
+ul {
+  list-style: none;
+  padding: 0; 
+  margin: 0; 
+}
+
+h1, .event, .info, .city-searchbox, .event-numberbox {
+  color: #4f4e4e;
+}
+
+.info {
+  text-align: center;
+  padding-top: 50px;
+}
+
+/* Search boxes: */
+ .city, .event-numberbox {
+  border-radius: 10px;
+  padding: 15px 30px;
+  margin-bottom: 20px;
+  border: solid 0px rgba(0, 0, 0, 0.091);
+  color: #4f4e4e;
+}
+
+.event-listboxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.event {
+  background-color: white;
+  width: 260px;
+  padding: 20px 40px;
+  margin: 20px 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Horizontal offset, Vertical offset, Blur radius, Color */
+
+}
+
+.details-btn {
+  margin-bottom: 20px;
+  border: 0px solid black;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+/* Blue Button */
+ul li:nth-child(4n + 1) .details-btn {
+  background-color: rgb(100, 168, 227);
+  color: white;
+}
+
+/* Green Button */
+ul li:nth-child(4n +2) .details-btn {
+  background-color: rgb(88, 160, 88);
+  color: white;
+}
+
+/* Yellow Button */
+ul li:nth-child(4n + 3) .details-btn {
+  background-color: rgb(226, 172, 119);
+  color: white; /* Adjust text color for visibility */
+}
+
+/* Red Button */
+ul li:nth-child(4n + 4) .details-btn {
+  background-color: rgb(210, 87, 87);
+  color: white;
+}
+
+
+.location-icon {
+  width: 15px; /* Adjust the size as needed */
+  height: 15px;
+  display: inline-block;
+  background-image: url('../public/location-icon.svg');
+  background-size: cover; /* Adjust background size behavior */
+  margin-right: 7px; /* Space between icon and location text */
+}
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

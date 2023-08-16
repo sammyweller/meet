@@ -5,9 +5,10 @@ const NumberOfEvents = ({ setCurrentNOE }) => {
   };
 
   return (
-    <div id="number-of-events">
+    <div id="number-of-events" className="event-number">
       <input
         type="text"
+        className="event-numberbox"
         defaultValue="32"
         onChange={handleInputChanged}
         data-testid="numberOfEventsInput"

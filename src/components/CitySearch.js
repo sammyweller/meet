@@ -30,7 +30,7 @@ const CitySearch = ({ allLocations, setCurrentCity }) => {
 
 
   return (
-    <div id="city-search">
+    <div id="city-search" className="city-searchbox">
       <input
         type="text"
         className="city"
