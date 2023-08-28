@@ -1,7 +1,18 @@
-const NumberOfEvents = ({ setCurrentNOE }) => {
+const NumberOfEvents = ({ setCurrentNOE, setErrorAlert }) => {
   const handleInputChanged = (event) => {
     const value = event.target.value;
-    setCurrentNOE(value);
+
+    if (isNaN(value)) {
+      setErrorAlert('The input is not a number');
+    } else if (value > 50) {
+      setErrorAlert('The maximum input is 50');
+    } else if (value <= 0) {
+      setErrorAlert('The minimum input is 1');
+    } else {
+      setErrorAlert('');
+      setCurrentNOE(value);
+    }
+
   };
 
   return (
