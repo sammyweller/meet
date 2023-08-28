@@ -95,6 +95,14 @@ ul li:nth-child(4n + 4) .details-btn {
   margin-right: 7px; /* Space between icon and location text */
 }
 
+.alerts-container {
+  position: fixed;
+  top: 0px;
+  left: 20px;
+  width: 250px;
+  z-index: 1000;
+}
+
 
 
 @media (prefers-reduced-motion: no-preference) {
