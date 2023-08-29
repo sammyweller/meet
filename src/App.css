@@ -123,6 +123,11 @@ ul li:nth-child(4n + 4) .details-btn {
 .App {
   max-width: 350px;
 }
+
+.small-screen-text {
+  font-size: 12px;
+}
+
 }
 
 

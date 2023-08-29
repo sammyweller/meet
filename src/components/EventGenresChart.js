@@ -20,6 +20,7 @@ const EventGenresChart = ({ events }) => {
     const y = cy + radius * Math.sin(-midAngle * RADIAN) * 1.07;
     return percent ? (
       <text
+      className="small-screen-text"
         x={x}
         y={y}
         fill="#4f4e4e"
