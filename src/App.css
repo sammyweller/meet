@@ -119,6 +119,13 @@ ul li:nth-child(4n + 4) .details-btn {
 }
 
 
+@media (max-width: 415px) {
+.App {
+  max-width: 350px;
+}
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
